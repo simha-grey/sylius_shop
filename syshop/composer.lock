@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da4391b557f35400dbfd1aac04317a67",
+    "content-hash": "4ef3fc0ff57a2e8ccd65915bc5b5b206",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -6244,6 +6244,97 @@
                 }
             ],
             "time": "2023-11-08T05:53:05+00:00"
+        },
+        {
+            "name": "roma/sylius-product-variant-plugin",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simha-grey/sylius_plugin_g/",
+                "reference": "339b82d5964864d668394c43d195aa48fc03daae"
+            },
+            "require": {
+                "php": "^8.0",
+                "sylius/mailer-bundle": "^1.8 || ^2.0@beta",
+                "sylius/sylius": "^1.12",
+                "symfony/webpack-encore-bundle": "^1.15"
+            },
+            "conflict": {
+                "symfony/framework-bundle": "6.2.8"
+            },
+            "require-dev": {
+                "behat/behat": "^3.6.1",
+                "behat/mink-selenium2-driver": "^1.4",
+                "dmore/behat-chrome-extension": "^1.3",
+                "dmore/chrome-mink-driver": "^2.7",
+                "friends-of-behat/mink": "^1.8",
+                "friends-of-behat/mink-browserkit-driver": "^1.4",
+                "friends-of-behat/mink-debug-extension": "^2.0.0",
+                "friends-of-behat/mink-extension": "^2.4",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/suite-settings-extension": "^1.0",
+                "friends-of-behat/symfony-extension": "^2.1",
+                "friends-of-behat/variadic-extension": "^1.3",
+                "phpspec/phpspec": "^7.2",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.8.1",
+                "phpstan/phpstan-doctrine": "1.3.37",
+                "phpstan/phpstan-strict-rules": "^1.3.0",
+                "phpstan/phpstan-webmozart-assert": "^1.2.0",
+                "phpunit/phpunit": "^9.5",
+                "polishsymfonycommunity/symfony-mocker-container": "^1.0",
+                "sylius-labs/coding-standard": "^4.2",
+                "symfony/browser-kit": "^5.4 || ^6.0",
+                "symfony/debug-bundle": "^5.4 || ^6.0",
+                "symfony/dotenv": "^5.4 || ^6.0",
+                "symfony/flex": "^2.2.2",
+                "symfony/intl": "^5.4 || ^6.0",
+                "symfony/web-profiler-bundle": "^5.4 || ^6.0",
+                "vimeo/psalm": "5.9.0"
+            },
+            "default-branch": true,
+            "type": "sylius-plugin",
+            "extra": {
+                "symfony": {
+                    "require": "^5.4 || ^6.0"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Roma\\SyliusProductVariantPlugin\\": "src/",
+                    "Tests\\Roma\\SyliusProductVariantPlugin\\": "tests/"
+                }
+            },
+            "autoload-dev": {
+                "classmap": [
+                    "tests/Application/Kernel.php"
+                ]
+            },
+            "scripts": {
+                "post-install-cmd": [
+                    "php bin/create_node_symlink.php"
+                ],
+                "post-update-cmd": [
+                    "php bin/create_node_symlink.php"
+                ],
+                "post-create-project-cmd": [
+                    "php bin/create_node_symlink.php"
+                ],
+                "auto-scripts": {
+                    "cache:clear": "symfony-cmd",
+                    "assets:install %PUBLIC_DIR%": "symfony-cmd",
+                    "security-checker security:check": "script"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "Add Product Variant stockStatus functionality",
+            "keywords": [
+                "sylius",
+                "sylius-plugin"
+            ],
+            "time": "2023-11-26T02:44:45+00:00"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -17537,5 +17628,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

@@ -23,11 +23,12 @@
     ],
     "require": {
         "php": "^8.0",
+        "roma/sylius-product-variant-plugin": "dev-main",
         "sylius/paypal-plugin": "^1.5",
         "sylius/sylius": "^1.12.11",
         "symfony/dotenv": "^5.4 || ^6.0",
-        "symfony/runtime": "^5.4 || ^6.0",
-        "symfony/flex": "^2.1"
+        "symfony/flex": "^2.1",
+        "symfony/runtime": "^5.4 || ^6.0"
     },
     "require-dev": {
         "behat/behat": "^3.7",
@@ -133,5 +134,9 @@
         "symfony/polyfill-php73": "*",
         "symfony/polyfill-php74": "*",
         "symfony/polyfill-php80": "*"
-    }
+    },
+    "repositories": [{
+            "type": "git",
+            "url": "https://github.com/simha-grey/sylius_plugin_g/"
+        }]
 }
