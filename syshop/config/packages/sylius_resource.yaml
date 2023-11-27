@@ -1,0 +1,7 @@
+sylius_resource:
+    resources:
+        roma.productstock:
+            driver: doctrine/orm # You can use also different driver here
+            classes:
+                model: Roma\SyliusProductVariantPlugin\Entity\ProductStock
+                repository: Roma\SyliusProductVariantPlugin\Repository\ProductStockRepository

@@ -5513,16 +5513,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.24.3",
+            "version": "1.24.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "12f01d214f1c73b9c91fdb3b1c415e4c70652083"
+                "reference": "6bd0c26f3786cd9b7c359675cb789e35a8e07496"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/12f01d214f1c73b9c91fdb3b1c415e4c70652083",
-                "reference": "12f01d214f1c73b9c91fdb3b1c415e4c70652083",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6bd0c26f3786cd9b7c359675cb789e35a8e07496",
+                "reference": "6bd0c26f3786cd9b7c359675cb789e35a8e07496",
                 "shasum": ""
             },
             "require": {
@@ -5554,9 +5554,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.24.3"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.24.4"
             },
-            "time": "2023-11-18T20:15:32+00:00"
+            "time": "2023-11-26T18:29:22+00:00"
         },
         {
             "name": "polishsymfonycommunity/symfony-mocker-container",
@@ -6251,7 +6251,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/simha-grey/sylius_plugin_g/",
-                "reference": "339b82d5964864d668394c43d195aa48fc03daae"
+                "reference": "40b95f71c13ba54d5be3bdc90ac35731faaf6c90"
             },
             "require": {
                 "php": "^8.0",
@@ -6334,7 +6334,7 @@
                 "sylius",
                 "sylius-plugin"
             ],
-            "time": "2023-11-26T02:44:45+00:00"
+            "time": "2023-11-27T04:02:04+00:00"
         },
         {
             "name": "sonata-project/block-bundle",
