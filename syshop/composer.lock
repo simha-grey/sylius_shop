@@ -6251,7 +6251,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/simha-grey/sylius_plugin_g/",
-                "reference": "40b95f71c13ba54d5be3bdc90ac35731faaf6c90"
+                "reference": "d7c2c9c6d633eee80121837d0cd041419ddb9729"
             },
             "require": {
                 "php": "^8.0",
@@ -6334,7 +6334,7 @@
                 "sylius",
                 "sylius-plugin"
             ],
-            "time": "2023-11-27T04:02:04+00:00"
+            "time": "2023-11-27T08:43:06+00:00"
         },
         {
             "name": "sonata-project/block-bundle",
