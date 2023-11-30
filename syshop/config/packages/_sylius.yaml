@@ -135,6 +135,7 @@ sylius_product:
         product:
             classes:
                 model: App\Entity\Product\Product
+                repository: Roma\SyliusProductVariantPlugin\Repository\ProductWithStockRepository
             translation:
                 classes:
                     model: App\Entity\Product\ProductTranslation
